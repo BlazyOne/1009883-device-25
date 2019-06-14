@@ -28,36 +28,28 @@
           <input type="text" name="fast-search" id="fast-search-field" placeholder="Поиск по сайту">
           <button type="submit">Найти</button>
         </form>
-        <a href="#">Войти</a>
-        <a href="#">Сравнить</a>
-        <a href="#">Корзина</a>
+        <ul>
+          <li><a href="#">Войти</a></li>
+          <li><a href="#">Сравнить</a></li>
+          <li><a href="#">Корзина</a></li>
+        </ul>
       </div>
       <nav class="main-navigation">
         <ul class="main-navigation-list">
-          <li><a href="catalog.html">Каталог товаров</a></li>
+          <li>
+            <a href="catalog.html">Каталог товаров</a>
+            <ul class="type-list">
+              <li><a href="#">Виртуальная реальность</a></li>
+              <li><a href="#">Фитнес-браслеты</a></li>
+              <li><a href="#">Квадрокоптеры</a></li>
+              <li><a href="catalog.html">Моноподы для селфи</a></li>
+              <li><a href="#">Умные часы</a></li>
+              <li><a href="#">Экшн-камеры</a></li>
+            </ul>
+          </li>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
-        </ul>
-        <ul class="type-list-container">
-          <li>
-            <ul class="type-list">
-              <li><a href="catalog.html">Виртуальная реальность</a></li>
-              <li><a href="catalog.html">Моноподы для селфи</a></li>
-              <li><a href="catalog.html">Экшн-камеры</a></li>
-            </ul>
-          </li>
-          <li>
-            <ul class="type-list">
-              <li><a href="catalog.html">Фитнес-браслеты</a></li>
-              <li><a href="catalog.html">Умные часы</a></li>
-            </ul>
-          </li>
-          <li>
-            <ul class="type-list">
-              <li><a href="catalog.html">Квадрокоптеры</a></li>
-            </ul>
-          </li>
         </ul>
       </nav>
     </header>
@@ -72,9 +64,7 @@
         <ul class="product-slider-list">
           <li class="product-slide-1">
             <span class="slide-number">01</span>
-            <div class="product-slide-image">
-              <img src="img/long-stick.png" width="384" height="486">
-            </div>
+            <img src="img/long-stick.png" width="384" height="486">
             <p class="product-slide-slogan">Делай селфи, как Бен Стиллер!</p>
             <p class="product-slide-details">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
             <a class="button" href="#">Подробнее</a>
@@ -93,9 +83,7 @@
           </li>
           <li class="product-slide-2">
             <span class="slide-number">02</span>
-            <div class="product-slide-image">
-              <img src="img/motivating-bracelet.png" width="345" height="485">
-            </div>
+            <img src="img/motivating-bracelet.png" width="345" height="485">
             <p class="product-slide-slogan">Худеем правильно!</p>
             <p class="product-slide-details">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
             <a class="button" href="#">Подробнее</a>
@@ -110,9 +98,7 @@
           </li>
           <li class="product-slide-3">
             <span class="slide-number">03</span>
-            <div class="product-slide-image">
-              <img src="img/laser-quadrocopter.png" width="526" height="334">
-            </div>
+            <img src="img/laser-quadrocopter.png" width="526" height="334">
             <p class="product-slide-slogan">Порхает как бабочка, жалит как пчела!</p>
             <p class="product-slide-details">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
             <a class="button" href="#">Подробнее</a>
@@ -134,7 +120,7 @@
         <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="categories-list">
           <li><a href="#">Виртуальная реальность</a></li>
-          <li><a href="#">Моноподы для селфи</a></li>
+          <li><a href="catalog.html">Моноподы для селфи</a></li>
           <li><a href="#">Экшн-камеры</a></li>
           <li><a href="#">Фитнес-браслеты</a></li>
           <li><a href="#">Умные часы</a></li>
@@ -172,10 +158,10 @@
             <img src="img/logo-gray-dp.png" width="260" height="100" alt="Логотип DP">
           </a></li>
           <li><a class="producer-logo" href="#">
-            <img src="img/logo-gray-SPgadgets.png" width="260" height="100" alt="Логотип SP Gadgets">
+            <img src="img/logo-gray-spgadgets.png" width="260" height="100" alt="Логотип SP Gadgets">
           </a></li>
           <li><a class="producer-logo" href="#">
-            <img src="img/logo-gray-GoPro.png" width="260" height="100" alt="Логотип Go Pro">
+            <img src="img/logo-gray-gopro.png" width="260" height="100" alt="Логотип Go Pro">
           </a></li>
           <li><a class="producer-logo" href="#">
             <img src="img/logo-gray-vive.png" width="260" height="100" alt="Логотип Vive">
@@ -204,27 +190,6 @@
         <a class="button" href="#">Напишите нам</a>
       </section>
 
-      <section class="modal modal-map">
-        <h2 class="visually-hidden">Как до нас добраться</h2>
-        <div class="map-big">
-          <img src="img/map-big.jpg" width="960" height="559" alt="Офис компании по адресу ул. Строителей 15, Москва">
-        </div>
-        <button class="modal-close" type="button">Закрыть</button>
-      </section>
-
-      <section class="modal modal-write-us">
-        <h2 class="visually-hidden">Написать нам</h2>
-        <form class="write-us-form" method="get" action="https://echo.htmlacademy.ru">
-          <label for="name-field">Ваше имя:</label>
-          <input id="name-field" type="text" name="name" placeholder="Имя Фамилия">
-          <label for="email-field">Ваш e-mail:</label>
-          <input id="email-field" type="text" name="email" placeholder="email@example.com">
-          <label for="letter-text-field">Текст письма:</label>
-          <textarea id="letter-text-field" name="letter-text" placeholder="В свободной форме"></textarea>
-          <button class="button" type="submit">Отправить</button>
-        </form>
-        <button class="modal-close" type="button">Закрыть</button>
-      </section>
     </main>
     <footer class="main-footer">
       <div class="footer-top">
@@ -243,9 +208,11 @@
               class="cls-1" data-name="-e-logo" />
           </svg>
         </a>
-        <a href="#">Войти</a>
-        <a href="#">Сравнить</a>
-        <a href="#">Корзина</a>
+        <ul>
+          <li><a href="#">Войти</a></li>
+          <li><a href="#">Сравнить</a></li>
+          <li><a href="#">Корзина</a></li>
+        </ul>
       </div>
       <div class="footer-middle">
         <span>г. Москва, ул. Строителей, 15</span>
@@ -269,6 +236,7 @@
           </a></li>
         </ul>
         <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <span class="visually-hidden">Логотип HTML academy</span>
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
             y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09"
             xml:space="preserve">
@@ -278,5 +246,27 @@
         </a>
       </div>
     </footer>
+
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <div class="map-big">
+        <img src="img/map-big.jpg" width="960" height="559" alt="Офис компании по адресу ул. Строителей 15, Москва">
+      </div>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+    
+    <section class="modal modal-write-us">
+      <h2 class="visually-hidden">Написать нам</h2>
+      <form class="write-us-form" method="get" action="https://echo.htmlacademy.ru">
+        <label for="name-field">Ваше имя:</label>
+        <input id="name-field" type="text" name="name" placeholder="Имя Фамилия">
+        <label for="email-field">Ваш e-mail:</label>
+        <input id="email-field" type="text" name="email" placeholder="email@example.com">
+        <label for="letter-text-field">Текст письма:</label>
+        <textarea id="letter-text-field" name="letter-text" placeholder="В свободной форме"></textarea>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
   </body>
 </html>
