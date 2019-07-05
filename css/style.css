@@ -1,29 +1,29 @@
 @font-face {
-font-family: "Gilroy";
-font-weight: 300;
-src: url("../fonts/gilroylight.woff2") format("woff2"),
-url("../fonts/gilroylight.woff") format("woff");
+  font-family: "Gilroy";
+  font-weight: 300;
+  src: url("../fonts/gilroylight.woff2") format("woff2"),
+  url("../fonts/gilroylight.woff") format("woff");
 }
 
 @font-face {
-font-family: "Gilroy";
-font-weight: 800;
-src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
-url("../fonts/gilroyextrabold.woff") format("woff");
+  font-family: "Gilroy";
+  font-weight: 800;
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
+  url("../fonts/gilroyextrabold.woff") format("woff");
 }
 
 @font-face {
-font-family: "Open Sans";
-font-weight: 300;
-src: url("../fonts/opensanslight.woff2") format("woff2"),
-url("../fonts/opensanslight.woff") format("woff");
+  font-family: "Open Sans";
+  font-weight: 300;
+  src: url("../fonts/opensanslight.woff2") format("woff2"),
+  url("../fonts/opensanslight.woff") format("woff");
 }
 
 @font-face {
-font-family: "Open Sans";
-font-weight: 400;
-src: url("../fonts/opensans.woff2") format("woff2"),
-url("../fonts/opensans.woff") format("woff");
+  font-family: "Open Sans";
+  font-weight: 400;
+  src: url("../fonts/opensans.woff2") format("woff2"),
+  url("../fonts/opensans.woff") format("woff");
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -526,14 +526,14 @@ img {
 .products-slider {
   position: relative;
 
+  min-height: 497px;
   margin-top: -111px;
-
-  margin-bottom: 106px;
+  margin-bottom: 95px;
 }
 
 .products-slider-controls {
   position: absolute;
-  top: 327px;
+  bottom: 140px;
   left: 999px;
 }
 
@@ -1524,17 +1524,18 @@ img {
   width: 832px;
 }
 
-.catalog-container::before {
+/* .catalog-container::before {
   content: "";
   position: absolute;
-  right: 0;
+  left: 0;
   z-index: -1;
 
-  width: 100vw;
+  width: 100%;
+  min-width: 1160px;
   height: 71px;
 
   background-color: rgba(0, 0, 0, 0.08);
-}
+} */
 
 .sorting {
   display: -webkit-box;
@@ -1558,10 +1559,24 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.sorting-type-list::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  z-index: -1;
+
+  width: 100%;
+  min-width: 1160px;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.08);
 }
 
 .sorting-type-list li {
@@ -1621,13 +1636,11 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
   margin: 0;
+  margin-left: 32px;
   padding: 0;
 
   list-style: none;
