@@ -60,8 +60,12 @@ body {
   color: #000000;
   font-weight: 300;
   letter-spacing: 0.15px;
+}
 
-  overflow-x: hidden;
+@media (min-width: 1160px) {
+  html, body {
+    overflow-x: hidden;
+  }
 }
 
 a {
@@ -1248,6 +1252,12 @@ img {
   display: flex;
 }
 
+@media (max-width: 1160px) {
+  .filters-catalog-container {
+    overflow-x: hidden;
+  }
+}
+
 .filters {
   position: relative;
 
@@ -1547,7 +1557,7 @@ img {
   top: 0;
   z-index: -1;
 
-  width: 200vw;
+  width: 1000vw;
   min-width: 1160px;
   height: 100%;
 
